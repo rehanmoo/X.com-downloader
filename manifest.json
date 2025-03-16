@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "X.com Video Downloader",
+  "version": "1.0",
+  "description": "Automatically downloads videos from X.com when played",
+  "permissions": ["tabs", "webNavigation", "scripting"],
+  "host_permissions": ["*://*.x.com/*", "*://*.twitter.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.x.com/*", "*://*.twitter.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
