@@ -14,7 +14,7 @@ A tool that automatically downloads videos from X.com (formerly Twitter) when yo
 - A Chromium-based browser (Chrome, Edge, Brave) or Firefox
 
 ## Installation
-
+### Must step: create a folder extension and paste extension.js, content.js and manifest.json
 ### 1. Install yt-dlp
 
 ```bash
